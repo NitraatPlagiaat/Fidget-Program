@@ -96,6 +96,11 @@ namespace Fidget_Program
             Music.getRandomSong(Music.muse);
         }
 
+        /// <summary>
+        /// open horror ambient sound/music
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_horrorAmbience_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=HmkBpCBLnCg");

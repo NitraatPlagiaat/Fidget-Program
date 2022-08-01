@@ -46,6 +46,18 @@ namespace Fidget_Program
             "https://www.youtube.com/watch?v=6uBK5kvakD8"
         };
 
+        /// <summary>
+        /// get a random song from string[] songs
+        /// </summary>
+        /// <algo>
+        /// loop endless
+        /// make new int index with a random number from rand between 0 and songs.length
+        /// if the new number has not been played the previous click
+        /// open a new browser tab with the youtube link
+        /// make alreadyplayed the index number
+        /// break the loop
+        /// </algo>
+        /// <param name="songs"></param>
         internal static void getRandomSong(string[] songs)
         {
             while (true)
