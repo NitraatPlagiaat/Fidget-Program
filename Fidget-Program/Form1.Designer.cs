@@ -37,11 +37,11 @@ namespace Fidget_Program
             this.tb_fidget = new System.Windows.Forms.TextBox();
             this.btn_clear = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_rammstein = new System.Windows.Forms.Button();
-            this.btn_slipknot = new System.Windows.Forms.Button();
-            this.btn_cannibalCorpse = new System.Windows.Forms.Button();
-            this.btn_behemoth = new System.Windows.Forms.Button();
+            this.btn_horrorAmbience = new System.Windows.Forms.Button();
             this.btn_muse = new System.Windows.Forms.Button();
+            this.btn_behemoth = new System.Windows.Forms.Button();
+            this.btn_slipknot = new System.Windows.Forms.Button();
+            this.btn_rammstein = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,14 +91,42 @@ namespace Fidget_Program
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btn_horrorAmbience);
             this.groupBox3.Controls.Add(this.btn_muse);
             this.groupBox3.Controls.Add(this.btn_behemoth);
-            this.groupBox3.Controls.Add(this.btn_cannibalCorpse);
             this.groupBox3.Controls.Add(this.btn_slipknot);
             this.groupBox3.Controls.Add(this.btn_rammstein);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // btn_horrorAmbience
+            // 
+            resources.ApplyResources(this.btn_horrorAmbience, "btn_horrorAmbience");
+            this.btn_horrorAmbience.Name = "btn_horrorAmbience";
+            this.btn_horrorAmbience.UseVisualStyleBackColor = true;
+            this.btn_horrorAmbience.Click += new System.EventHandler(this.btn_horrorAmbience_Click);
+            // 
+            // btn_muse
+            // 
+            resources.ApplyResources(this.btn_muse, "btn_muse");
+            this.btn_muse.Name = "btn_muse";
+            this.btn_muse.UseVisualStyleBackColor = true;
+            this.btn_muse.Click += new System.EventHandler(this.btn_muse_Click);
+            // 
+            // btn_behemoth
+            // 
+            resources.ApplyResources(this.btn_behemoth, "btn_behemoth");
+            this.btn_behemoth.Name = "btn_behemoth";
+            this.btn_behemoth.UseVisualStyleBackColor = true;
+            this.btn_behemoth.Click += new System.EventHandler(this.btn_behemoth_Click);
+            // 
+            // btn_slipknot
+            // 
+            resources.ApplyResources(this.btn_slipknot, "btn_slipknot");
+            this.btn_slipknot.Name = "btn_slipknot";
+            this.btn_slipknot.UseVisualStyleBackColor = true;
+            this.btn_slipknot.Click += new System.EventHandler(this.btn_slipknot_Click);
             // 
             // btn_rammstein
             // 
@@ -106,30 +134,6 @@ namespace Fidget_Program
             this.btn_rammstein.Name = "btn_rammstein";
             this.btn_rammstein.UseVisualStyleBackColor = true;
             this.btn_rammstein.Click += new System.EventHandler(this.btn_rammstein_Click);
-            // 
-            // btn_slipknot
-            // 
-            resources.ApplyResources(this.btn_slipknot, "btn_slipknot");
-            this.btn_slipknot.Name = "btn_slipknot";
-            this.btn_slipknot.UseVisualStyleBackColor = true;
-            // 
-            // btn_cannibalCorpse
-            // 
-            resources.ApplyResources(this.btn_cannibalCorpse, "btn_cannibalCorpse");
-            this.btn_cannibalCorpse.Name = "btn_cannibalCorpse";
-            this.btn_cannibalCorpse.UseVisualStyleBackColor = true;
-            // 
-            // btn_behemoth
-            // 
-            resources.ApplyResources(this.btn_behemoth, "btn_behemoth");
-            this.btn_behemoth.Name = "btn_behemoth";
-            this.btn_behemoth.UseVisualStyleBackColor = true;
-            // 
-            // btn_muse
-            // 
-            resources.ApplyResources(this.btn_muse, "btn_muse");
-            this.btn_muse.Name = "btn_muse";
-            this.btn_muse.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -158,9 +162,9 @@ namespace Fidget_Program
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btn_muse;
         private System.Windows.Forms.Button btn_behemoth;
-        private System.Windows.Forms.Button btn_cannibalCorpse;
         private System.Windows.Forms.Button btn_slipknot;
         private System.Windows.Forms.Button btn_rammstein;
+        private System.Windows.Forms.Button btn_horrorAmbience;
     }
 }
 
